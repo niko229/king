@@ -10,163 +10,232 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
-        .footer {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    align-items: center;
-    background-color: #D6D6D6;
-    color: white;  
-    bottom: 0;
+        h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
     </style>
 </head>
 <body>
-    <nav class="uk-navbar-container">
-        <div class="uk-container">
-            <div uk-navbar>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand"><span>doner.AZ</span></a>
     
-                <div class="uk-navbar-left">
-    
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">ev</a></li>
-                        <li>
-                            <a href="index1.html">ronaldo</a>
-                        </li>
-                    </ul>
-    
-                </div>
-    
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="nav" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#niko" class="nav-link">Haqqımızda</a></li>
+                    <li class="nav-item"><a href="#niko2" class="nav-link">menyu</a></li>
+                    <li class="nav-item"><a href="#niko3" class="nav-link">elaqe</a></li>
+                </ul>
             </div>
         </div>
-    </nav>
-    <div id="carouselExample" class="carousel slide ">
+      </nav>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="456.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="890.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="234.jpg" class="d-block w-100" alt="...">
+            <img src="3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        
-        <div class="uk-section uk-section-muted">
-            <div class="uk-container">
-        
-                <h3>ronaldo</h3>
-        
-                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse tenetur sed hic tempora non impedit distinctio quis sit excepturi laborum inventore eveniet nisi cupiditate veritatis, natus veniam sint aut fugit!</p>
+      </div>
+      <section id="niko">
+          <h6 class="geofizikakomite my-3"><strong>Haqqımızda</strong></h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nam, facilis ut distinctio iure cum voluptas, dolores provident hic perspiciatis reprehenderit sunt a eligendi impedit adipisci voluptates enim, debitis cupiditate.
+          Laudantium saepe illo quae illum ratione accusamus quasi animi minima adipisci non enim, quod cupiditate dolores ipsa ab sit iure id ea fuga. Nemo, deleniti! Aliquid necessitatibus ducimus dicta incidunt?
+          Blanditiis dolorum vitae harum cupiditate a saepe minus non impedit quia sint amet nihil, voluptatibus doloribus sequi libero magnam quos expedita odit quo quaerat voluptas distinctio, quas laudantium cum. Corrupti.
+          Deleniti quisquam excepturi quam expedita possimus odio architecto nesciunt iste, eius incidunt, dicta eveniet. Accusamus excepturi, nulla dolor aliquid maxime magni ea reprehenderit expedita ipsa, dolore, minima ipsum distinctio possimus?
+</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut amet illum hic ipsum vitae temporibus quaerat ullam ipsa maxime, placeat harum et? Illum nisi nesciunt nam cumque praesentium esse?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quae harum velit non dolore et doloribus blanditiis facere. Nihil similique error deserunt sit doloremque pariatur sunt labore accusantium voluptas asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum unde id ratione culpa ad, deleniti nulla ipsum assumenda molestiae non dolorem autem reprehenderit ea, ut expedita dolore ipsam facilis totam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat atque aliquam aut quos enim nobis facere. Perspiciatis, deserunt modi minus esse distinctio rerum quia cumque atque a suscipit minima repudiandae.</p>
+        </div>  
+        <section id="niko2">
+            <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <img src="1.jpg" alt="">
+                        <p>doner Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quasi laud</p>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur omnis, fugit autem repellat incidunt, fugiat sint quidem nisi dolor id minus similique. Id enim sed quod optio obcaecati fugiat culpa!</p>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <img src="2.jpg" alt="">
+                        <p>doner Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id </p>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellat maxime autem omnis quaerat id nobis accusantium, quo illo minima, in eos molestias neque esse nemo debitis. Incidunt, inventore excepturi.</p>
-                        <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">ronaldo oldugu kuluplar</button>
-<div id="modal-example" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <p class="uk-text-right">
-            <img src="sp.png" alt="" width="100px">
-            <img src="man.png" alt="" width="100px">
-            <img src="real.png" alt="" width="100px">
-            <img src="jv.png" alt="" width="100px">
-            <img src="al.png" alt="" width="100px">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>                </div>
+                </div>
             </div>
-        </div>
-      </div>
+            <div>
+            </div>
+            <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <img src="3.jpg" alt="">
+                        <p>doner Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <img src="6.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+            <section id="niko3">
+            <footer class="footer">
+                <div class="container">
+                 <div class="row">
+                   <div class="footer-col">
+                     <h4>web desing</h4>
+                     <ul>
+                       <li><a href="#">Nihat Mammadli</a></li>
+                       <li><a href="#">Elmaddin Ahmadzade</a></li>
+                       <li><a href="#">King GROUP</a></li>
+                     </ul>
+                   </div>
+                   <div class="footer-col">
+                     <h4>Mekan</h4>
+                     <ul>
+                       <li><a href="#">Azerbaycan, Baku , kesle </a></li>
+                     </ul>
+                   </div>
+                   <div class="footer-col">
+                     <h4>elaqa</h4>
+                     <ul>
+                       <li><a href="#">+ 070 299 16 09</a></li>
+                       <li><a href="#">+ 070 299 16 09</a></li>
+                       <li><a href="#">+ 070 299 16 09</a></li>
+                     </ul>
+                   </div>
+                   <div class="footer-col">
+                     <h4>Sosyal sebeke</h4>
+                     <div class="social-links">
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#"><i class="fab fa-twitter"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+             </footer>
 
-        </p>
-    </div>
-</div>
-        </p>
-    </div>
-</div>
-   </div>
-   <div class="uk-child-width-expand@s" style="margin-left: 10px;" uk-grid>
-
-    <div>
-        <h4>il</h4>
-        <ul class="uk-list uk-list-disc uk-list-muted">
-            <li>2002-2003</li>
-            <li>2003-2009</li>
-            <li>2009-2018</li>
-            <li>2018-2021</li>
-            <li>2021-2022</li>
-            <li>2023-</li>
-        </ul>
-    </div>
-
-    <div>
-        <h4>klup</h4>
-        <ul class="uk-list uk-list-disc uk-list-emphasis">
-            <li>Sporting</li>
-            <li>Man United</li>
-            <li>Real Madrid</li>
-            <li>juventus</li>
-            <li>Man United</li>
-            <li>All Nasr</li>
-        </ul>
-    </div>
-    <div>
-        <h4>mac</h4>
-        <ul class="uk-list uk-list-disc uk-list-primary">
-            <li>27</li>
-            <li>196</li>
-            <li>292</li>
-            <li>98</li>
-            <li>40</li>
-            <li>9</li>
-        </ul>
-    </div>
-
-    <div>
-        <h4>goll</h4>
-        <ul class="uk-list uk-list-disc uk-list-secondary">
-            <li>3</li>
-            <li>84</li>
-            <li>311</li>
-            <li>81</li>
-            <li>19</li>
-            <li>11</li>
-        </ul>
-    </div>
-
-</div>
-
-</div>
-
-      <div class="card " style="width: 18rem; margin-left:70px; margin-top: 10px;">
-        <img src="adam.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-        </div>
-      </div>
-      <div class="card " style="width: 18rem; margin-left:70px; margin-top: 10px;">
-        <img src="adam.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <a href="#" uk-totop uk-scroll>yuxari qalx</a>
-      <div class="footer">
-        <h2>desing by nihat &copy; 2022</h2>
-    </div>
 </body>
 </html>
